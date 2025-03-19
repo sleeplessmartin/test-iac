@@ -1,0 +1,23 @@
+name: Test Deploy
+on: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Test custom type
+        required: true
+        type: choice
+        default: dce
+        options:
+          - dce
+          - enterprise-rewards-int
+          - enterprise-rewards-rc
+          - enterprise-rewards-prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: |
+          echo Ted Martin Hermosisima
+        
