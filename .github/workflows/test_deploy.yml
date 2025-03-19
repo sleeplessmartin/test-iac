@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: Test custom type
+        description: Target environment
         required: true
         type: environment
         default: dce
