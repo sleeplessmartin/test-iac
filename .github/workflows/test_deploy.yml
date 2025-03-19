@@ -19,5 +19,5 @@ jobs:
     steps:
       - name: Test
         run: |
-          echo Ted Martin Hermosisima
+          echo "Ted Martin Hermosisima - ${{github.events.inputs.environment}}" 
         
